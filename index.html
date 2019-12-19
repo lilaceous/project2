@@ -9,50 +9,44 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
 <link rel="stylesheet" href="css/style.css">
 <script src="js/jquery-1.11.1.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.js"></script> -->
 <script src="js/main.js"></script>
 </head>
 <body>
 <div class="container">
-	<header id="header">
+	<section id="header">
 		<div class="menu">
 			<div class="logo">
-				<h1><a href=""><img src="images/logo.png" alt=""></a></h1>
+				<h1><a href=""><img src="images/logo.png" alt="logo"></a></h1>
 			</div>
 			<div class="gnb">
-				<nav id="GNB">
-					<ul>
-						<li><a href="">VIEWING</a></li>
-						<li><a href="">PROGRAM</a></li>
-						<li><a href="">EDUCATION</a></li>
-						<li><a href="">COLLECTION</a></li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-		<div class="keyvisual">
-			<div class="img">
 				<ul>
-						<li><a href=""><img src="images/key1.jpg" alt="keyvisual1"></a></li>
-						<!-- <li><a href=""><img src="images/key2.jpg" alt="keyvisual2"></a></li>
-						<li><a href=""><img src="images/key3.jpg" alt="keyvisual3"></a></li>
-						<li><a href=""><img src="images/key4.jpg" alt="keyvisual4"></a></li>
-						<li><a href=""><img src="images/key5(2).jpg" alt="keyvisual5"></a></li>
-						<li><a href=""><img src="images/key6.jpg" alt="keyvisual6"></a></li> -->
+					<li><a href="#">MEMBERSHIP</a></li>
+					<li><a href="#">FILM&VIDEO</a></li>
+					<li><a href="#">EXHIBITION</a></li>
+					<li><a href="#">COLLECTION</a></li>
+					<li><a href="#">CONTACT</a></li>
 				</ul>
 			</div>
 		</div>
-	</header>
-	<div class="navi">
-		<ul>
-			<li><a href="#header">header</a><li>
-			<li><a href="#membership">membership</a><li>
-			<li><a href="#film_video">film&video</a><li>
-			<li><a href="#exhibition">exhibition</a><li>
-			<li><a href="#collection">collection</a><li>
-			<li><a href="#contact">contact</a><li>
-			<li><a href="#footer">footer</a><li>
-		</ul>
-	</div>
+		<div class="fixed_gnb">
+			<ul>
+				<li><a href="#">MEMBERSHIP</a></li>
+				<li><a href="#">FILM&VIDEO</a></li>
+				<li><a href="#">EXHIBITION</a></li>
+				<li><a href="#">COLLECTION</a></li>
+				<li><a href="#">CONTACT</a></li>
+			</ul>
+		</div>
+		<div class="keyvisual">
+			<ul>
+				<li>
+					<img class="keyimage" src="images/keyimage.jpg" alt="keyimage">
+					<img class="keytext" src="images/keytext.png" alt="keytext">
+				</li>
+			</ul>
+		</div>
+	</section>
 	<section id="membership">
 		<div class="title">
 			<h3>MEMBERSHIP</h3>
@@ -101,7 +95,6 @@
 			</ul>
 		<div>
 	</section>
-
 	<section id="film_video">
 		<div class="title">
 			<h3>FILM & VIDEO</h3>
@@ -178,7 +171,6 @@
 			</ul>
 		</div>
 	</section>
-
 	<section id="exhibition">
 		<div class="title">
 			<h3>EXHIBITION</h3>
@@ -296,20 +288,17 @@
 		<p class="text_zone">
 			Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit<br>aenean rhoncus posuere odio in tincidunt proin iaculis.
 		</p>
-	</section>
-	<section id="banner">
-		<div class="content">
-			<ul>
-				<li><a href=""><img src="images/banner01.jpg" alt=""></a></li>
-				<li><a href=""><img src="images/banner02.jpg" alt=""></a></li>
-				<li><a href=""><img src="images/banner03.jpg" alt=""></a></li>
-				<li><a href=""><img src="images/banner04.jpg" alt=""></a></li>
-			</ul>
+		<div class="banner">
+			<div class="content">
+				<ul>
+					<li><a href=""><img src="images/banner01.jpg" alt=""></a></li>
+					<li><a href=""><img src="images/banner02.jpg" alt=""></a></li>
+					<li><a href=""><img src="images/banner03.jpg" alt=""></a></li>
+					<li><a href=""><img src="images/banner04.jpg" alt=""></a></li>
+				</ul>
+			</div>
 		</div>
 	</section>
-
-
-
 	<section id="contact">
 		<div class="title">
 			<h3>CONTACT US</h3>
@@ -328,15 +317,25 @@
 	<footer id="footer">
 		<div class="foot_inner">
 			<div class="foot_logo"><img src="images/flogo.png" alt=""></div>
-			<p class="copyright">© Copyright 2014 FreebiesXpress.com</p>
 			<div class="icon_area">
-				<a href=""><i class="fab fa-twitter"></i> <span>Twitter</span></a>
-				<a href=""><i class="fab fa-facebook-f"></i> <span>Facebook</span></a>
-				<a href=""><i class="fab fa-pinterest-p"></i> <span>Pinterest</span></a>
-				<a href=""><i class="fab fa-google-plus-g"></i> <span>Google Plus</span></a>
+				<a href=""><i class="fab fa-twitter"></i>Twitter</a>
+				<a href=""><i class="fab fa-facebook-f"></i>Facebook</a>
+				<a href=""><i class="fab fa-pinterest-p"></i>Pinterest</a>
+				<a href=""><i class="fab fa-google-plus-g"></i>Google Plus</a>
 			</div>
+			<p class="copyright">© Copyright 2014 FreebiesXpress.com</p>
 		</div>
 	</footer>
+	<div class="navi">
+		<ul>
+			<li><a href="#header">header</a></li>
+			<li><a href="#membership">membership</a></li>
+			<li><a href="#film_video">film&video</a></li>
+			<li><a href="#exhibition">exhibition</a></li>
+			<li><a href="#collection">collection</a></li>
+			<li><a href="#contact">contact</a></li>
+		</ul>
+	</div>
 </div>
 </body>
 </html>
